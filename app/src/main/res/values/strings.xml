@@ -17,6 +17,7 @@
     <string name="login">Entrar</string>
     <string name="login_username">Login</string>
     <string name="login_pwd">Senha</string>
+    <string name="login_remember">Lembrar usuário</string>
 
     <!-- Menu drawer -->
 

@@ -5,7 +5,6 @@ import android.support.v4.app.Fragment;
 
 import br.com.benhurqs.cederj.fragment.CalendarioFragment;
 import br.com.benhurqs.cederj.fragment.ChatFragment;
-import br.com.benhurqs.cederj.fragment.ConfiguracaoFragment;
 import br.com.benhurqs.cederj.fragment.MateriasFragment;
 import br.com.benhurqs.cederj.fragment.NotasFragment;
 import br.com.benhurqs.cederj.fragment.NoticiasFragment;
@@ -17,9 +16,19 @@ import br.com.benhurqs.cederj.fragment.TutoresFragment;
  */
 public class FragmentManagerMenu {
 
+    public static int CALENDAR_POSITION = 0;
+    public static int MATERIAS_POSITION = 1;
+    public static int NOTICIAS_POSITION = 2;
+    public static int CHAT_POSITION = 3;
+    public static int NOTAS_POSITION = 4;
+    public static int CONFIGURACAO_POSITION = 5;
+    public static int POLOS_POSITION = 6;
+    public static int TUTORES_POSITION = 7;
+
+
     static CalendarioFragment calendarioFragment;
     static ChatFragment chatFragment;
-    static ConfiguracaoFragment configuracaoFragment;
+//    static ConfiguracaoFragment configuracaoFragment;
     static MateriasFragment materiasFragment;
     static NotasFragment notasFragment;
     static NoticiasFragment noticiasFragment;
@@ -32,7 +41,7 @@ public class FragmentManagerMenu {
 
         calendarioFragment = new CalendarioFragment();
         chatFragment = new ChatFragment();
-        configuracaoFragment = new ConfiguracaoFragment();
+//        configuracaoFragment = new ConfiguracaoFragment();
         materiasFragment = new MateriasFragment();
         notasFragment = new NotasFragment();
         noticiasFragment = new NoticiasFragment();
@@ -54,8 +63,8 @@ public class FragmentManagerMenu {
                 return chatFragment;
             }case 4:{
                 return notasFragment;
-            }case 5:{
-                return configuracaoFragment;
+//            }case 5:{
+//                return configuracaoFragment;
             }case 6:{
                 return polosFragment;
             }case 7:{

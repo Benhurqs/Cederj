@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:title="@string/pref_settings" >
+        <CheckBoxPreference
+            android:key="@string/pref_notification_key"
+            android:title="@string/pref_notification"
+            android:summary="@string/pref_notification"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_login" >
+
+        <CheckBoxPreference
+            android:key="@string/pref_remenber_key"
+            android:title="@string/login_remember" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
