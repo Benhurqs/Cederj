@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_array">
+        <item>Calendário</item>
+        <item>Matérias</item>
+        <item>Notícias</item>
+        <item>Chat</item>
+        <item>Notas</item>
+        <item>Configuração</item>
+        <item>Pólos</item>
+        <item>Tutores</item>
+        <item>Sair</item>
+    </string-array>
+
+    <string-array name="calendario_array">
+        <item>Administração</item>
+        <item>Administração Pública</item>
+        <item>Licenciatura em Ciências Biológicas</item>
+        <item>Licenciatura em Física</item>
+        <item>Licenciatura em Geografia</item>
+        <item>Licenciatura em História</item>
+        <item>Licenciatura em Letra</item>
+        <item>Licenciatura em Matemática</item>
+        <item>Licenciatura em Pedagogia UERJ</item>
+        <item>Licenciatura em Pedagogia UNIRIO</item>
+        <item>Licenciatura em Química UENF</item>
+        <item>Licenciatura em Química UFRJ</item>
+        <item>Licenciatura em Turismo</item>
+        <item>Tecnologia em Gestão de Turismo</item>
+        <item>Tecnologia em Sistemas de Computação</item>
+        <item>Tecnologia em Segurança Pública e Social</item>
+    </string-array>
+
+    <string-array name="materias_array">
+        <item>Arquitetura e Projeto de Sistemas I</item>
+        <item>Computação Gráfica</item>
+        <item>Programação III</item>
+        <item>Rede de Computadores I</item>
+        <item>Trabalho de Conclusão de Curso</item>
+    </string-array>
+
+
+</resources>
