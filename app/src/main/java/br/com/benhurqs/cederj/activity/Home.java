@@ -1,6 +1,7 @@
 package br.com.benhurqs.cederj.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -13,8 +14,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import br.com.benhurqs.cederj.fragment.NavigationDrawerFragment;
 import br.com.benhurqs.cederj.R;
+import br.com.benhurqs.cederj.fragment.NavigationDrawerFragment;
+import br.com.benhurqs.cederj.helpers.FragmentManagerMenu;
 
 
 public class Home extends ActionBarActivity
@@ -55,18 +57,26 @@ public class Home extends ActionBarActivity
     }
 
     public void onSectionAttached(int number) {
-//        switch (number) {
-//            case 1:
-//                mTitle = getString(R.string.title_section1);
-//                break;
-//            case 2:
-//                mTitle = getString(R.string.title_section2);
-//                break;
-//            case 3:
-//                mTitle = getString(R.string.title_section3);
-//                break;
-//        }
+        // update the main content by replacing fragments
+        Fragment fragment = null;
+        FragmentManagerMenu fragmentManagerMenu = new FragmentManagerMenu();
+        fragment = fragmentManagerMenu.getFragment(number-1);
+
+        if(fragment == null){
+            logout();
+            return;
+        }
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
+
         mTitle = getResources().getStringArray(R.array.menu_array)[number-1];
+    }
+
+    public void logout(){
+        Intent logout = new Intent(this, Login.class);
+        startActivity(logout);
+        finish();
     }
 
     public void restoreActionBar() {
@@ -83,11 +93,13 @@ public class Home extends ActionBarActivity
             // Only show items in the action bar relevant to this screen
             // if the drawer is not showing. Otherwise, let the drawer
             // decide what to show in the action bar.
-            getMenuInflater().inflate(R.menu.home, menu);
+//            getMenuInflater().inflate(R.menu.home, menu);
             restoreActionBar();
-            return true;
+//            return true;
         }
-        return super.onCreateOptionsMenu(menu);
+
+        return true;
+//        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
