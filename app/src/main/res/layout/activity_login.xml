@@ -38,6 +38,8 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:hint="@string/login_username"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/edt_pwd"
             />
 
         <EditText
@@ -50,7 +52,9 @@
             android:background="#FCFCFC"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
+            android:singleLine="true"
             android:hint="@string/login_pwd"
+            android:inputType="textPassword"
             />
 
         <Button

@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 
 import br.com.benhurqs.cederj.fragment.CalendarioFragment;
 import br.com.benhurqs.cederj.fragment.ChatFragment;
+import br.com.benhurqs.cederj.fragment.ConfiguracaoFragment;
 import br.com.benhurqs.cederj.fragment.MateriasFragment;
 import br.com.benhurqs.cederj.fragment.NotasFragment;
 import br.com.benhurqs.cederj.fragment.NoticiasFragment;
@@ -28,7 +29,7 @@ public class FragmentManagerMenu {
 
     static CalendarioFragment calendarioFragment;
     static ChatFragment chatFragment;
-//    static ConfiguracaoFragment configuracaoFragment;
+    static ConfiguracaoFragment configuracaoFragment;
     static MateriasFragment materiasFragment;
     static NotasFragment notasFragment;
     static NoticiasFragment noticiasFragment;
@@ -41,7 +42,7 @@ public class FragmentManagerMenu {
 
         calendarioFragment = new CalendarioFragment();
         chatFragment = new ChatFragment();
-//        configuracaoFragment = new ConfiguracaoFragment();
+        configuracaoFragment = new ConfiguracaoFragment();
         materiasFragment = new MateriasFragment();
         notasFragment = new NotasFragment();
         noticiasFragment = new NoticiasFragment();
@@ -63,8 +64,8 @@ public class FragmentManagerMenu {
                 return chatFragment;
             }case 4:{
                 return notasFragment;
-//            }case 5:{
-//                return configuracaoFragment;
+            }case 5:{
+                return configuracaoFragment;
             }case 6:{
                 return polosFragment;
             }case 7:{
