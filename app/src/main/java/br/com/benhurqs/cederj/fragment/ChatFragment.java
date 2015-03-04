@@ -46,8 +46,10 @@ public class ChatFragment extends Fragment {
                 // If the event is a key-down event on the "enter" button
                 if ((event.getAction() == KeyEvent.ACTION_DOWN) &&
                         (keyCode == KeyEvent.KEYCODE_ENTER)) {
-                    ChatObj obj = new ChatObj(edtMsg.getText().toString(), MessageType.MINE);
-                    notifyMessage(obj);
+                    if(!edtMsg.getText().toString().isEmpty()) {
+                        ChatObj obj = new ChatObj(edtMsg.getText().toString(), MessageType.MINE);
+                        notifyMessage(obj);
+                    }
                     return true;
                 }
                 return false;
