@@ -13,7 +13,9 @@
             android:id="@+id/lv_chat"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/ly_msg">
+            android:layout_above="@+id/ly_msg"
+            android:transcriptMode="alwaysScroll"
+            android:divider="@android:color/transparent">
 
         </ListView>
 
