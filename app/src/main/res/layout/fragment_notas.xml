@@ -3,8 +3,12 @@
     android:layout_height="match_parent"
     tools:context="br.com.benhurqs.cederj.fragment.NotasFragment">
 
+    <include layout="@layout/custom_notas"></include>
+
     <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <br.com.benhurqs.cederj.widget.NotasTextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </FrameLayout>

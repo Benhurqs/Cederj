@@ -49,9 +49,9 @@ public class NotasAdapter extends ArrayAdapter<NotasObj> {
         TextView txtAp3 = (TextView)view.findViewById(R.id.txt_ap3);
         TextView txtNome = (TextView)view.findViewById(R.id.txt_materia);
 
-        if(!item.getAd1().isEmpty()){
-
-        }
+//        if(!item.getAd1().isEmpty()){
+//            txtAd1
+//        }
 
 
         return view;
